@@ -1,0 +1,20 @@
+{
+  "name": "@ecommerce/database",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "db:generate": "prisma generate",
+    "db:migrate": "prisma migrate dev",
+    "db:studio": "prisma studio",
+    "build": "echo 'database package does not require build'",
+    "lint": "echo 'database package lint not configured yet'",
+    "typecheck": "echo 'database package typecheck not configured yet'"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.6.0"
+  },
+  "devDependencies": {
+    "prisma": "^6.6.0"
+  }
+}

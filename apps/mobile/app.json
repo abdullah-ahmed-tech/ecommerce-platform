@@ -1,0 +1,14 @@
+{
+  "expo": {
+    "name": "EcommerceMobile",
+    "slug": "ecommerce-mobile",
+    "scheme": "ecommerce",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "platforms": ["ios", "android"],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}

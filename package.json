@@ -1,0 +1,20 @@
+{
+  "name": "ecommerce-platform",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Production-oriented ecommerce monorepo",
+  "packageManager": "pnpm@10.0.0",
+  "engines": {
+    "node": ">=20.11.0",
+    "pnpm": ">=10.0.0"
+  },
+  "scripts": {
+    "dev": "pnpm -r --parallel --filter @ecommerce/api --filter @ecommerce/web --filter @ecommerce/admin --filter @ecommerce/mobile dev",
+    "build": "pnpm -r --filter ./apps/** --filter ./packages/** build",
+    "lint": "pnpm -r --filter ./apps/** --filter ./packages/** lint",
+    "typecheck": "pnpm -r --filter ./apps/** --filter ./packages/** typecheck",
+    "db:generate": "pnpm --filter @ecommerce/database db:generate",
+    "db:migrate": "pnpm --filter @ecommerce/database db:migrate",
+    "db:studio": "pnpm --filter @ecommerce/database db:studio"
+  }
+}

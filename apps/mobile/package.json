@@ -1,0 +1,26 @@
+{
+  "name": "@ecommerce/mobile",
+  "version": "0.1.0",
+  "private": true,
+  "main": "expo-router/entry",
+  "scripts": {
+    "dev": "expo start",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
+    "build": "echo 'Use EAS build pipeline for production mobile builds'",
+    "lint": "eslint \"**/*.{ts,tsx}\"",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "expo": "^53.0.0",
+    "expo-router": "^4.0.0",
+    "react": "19.0.0",
+    "react-native": "0.79.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.2",
+    "@types/react-native": "^0.73.0",
+    "eslint": "^9.25.1",
+    "typescript": "^5.8.3"
+  }
+}
